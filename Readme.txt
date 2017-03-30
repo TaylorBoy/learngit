@@ -1,4 +1,4 @@
-小结
+1.1小结
 
 现在总结一下今天学的两点内容：
 
@@ -13,3 +13,9 @@
 	$ git init
 	$ git add readme.txt
 	$ git commit -m "Add readme.txt"
+	
+1.2小结
+
+要随时掌握工作区的状态，使用git status命令。
+
+如果git status告诉你有文件被修改过，用git diff可以查看修改内容。
