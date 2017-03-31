@@ -53,3 +53,23 @@ git checkout其实是用版本库里的版本替换工作区的版本，无论�
 4. git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git
    同步: git pull origin master
 5. git push origin 本地分支:远程分支
+
+
+2.1小结
+
+Git鼓励大量使用分支：
+
+查看分支：git branch
+
+创建分支：git branch <name>
+
+切换分支：git checkout <name>
+
+创建+切换分支：git checkout -b <name>
+
+合并某分支到当前分支：git merge <name>
+
+删除分支：git branch -d <name>
+
+
+
