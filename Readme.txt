@@ -45,3 +45,11 @@ git checkout其实是用版本库里的版本替换工作区的版本，无论�
 此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
 
 分布式版本系统的最大好处之一是在本地工作完全不需要考虑远程库的存在，也就是有没有联网都可以正常工作，而SVN在没有联网的时候是拒绝干活的！当有网络的时候，再把本地提交推送一下就完成了同步，真是太方便了！
+
+# /////////////////////////////////////////////////
+1. git init
+2. git add .
+3. git commit -am "###"      -------以上3步只是本地提交
+4. git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git
+   同步: git pull origin master
+5. git push origin 本地分支:远程分支
