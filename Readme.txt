@@ -83,3 +83,8 @@ Git鼓励大量使用分支：
 一是用git stash apply恢复，但是恢复后，stash内容并不删除，你需要用git stash drop来删除；
 
 另一种方式是用git stash pop，恢复的同时把stash内容也删了：
+
+# git log看看分支历史:
+
+git log --graph --pretty=oneline --abbrev-commit
+
