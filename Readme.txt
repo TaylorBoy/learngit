@@ -77,4 +77,14 @@ Git鼓励大量使用分支：
 git merge --no-ff -m "merge with no-ff" dev (因为本次合并要创建一个新的commit，所以加上-m参数，把commit描述写进去)
 
 
+2.2小结
 
+修复bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；
+
+当手头工作没有完成时，先把工作现场git stash一下，然后去修复bug，修复后，再git stash pop，回到工作现场。
+
+需要恢复一下，有两个办法：
+
+一是用git stash apply恢复，但是恢复后，stash内容并不删除，你需要用git stash drop来删除；
+
+另一种方式是用git stash pop，恢复的同时把stash内容也删了：
