@@ -71,5 +71,10 @@ Git鼓励大量使用分支：
 
 删除分支：git branch -d <name>
 
+通常，合并分支时，如果可能，Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息。
+
+如果要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。
+git merge --no-ff -m "merge with no-ff" dev (因为本次合并要创建一个新的commit，所以加上-m参数，把commit描述写进去)
+
 
 
