@@ -1,4 +1,4 @@
-1.1小结
+﻿1.1小结
 
 初始化一个Git仓库，使用git init命令。
 
@@ -102,3 +102,17 @@ git log --graph --pretty=oneline --abbrev-commit
 
 从远程抓取分支，使用git pull，如果有冲突，要先处理冲突。
 
+
+2.4 小结
+
+查看远程库信息，使用git remote -v；
+
+本地新建的分支如果不推送到远程，对其他人就是不可见的；
+
+从本地推送分支，使用git push origin branch-name，如果推送失败，先用git pull抓取远程的新提交；
+
+在本地创建和远程分支对应的分支，使用git checkout -b branch-name origin/branch-name，本地和远程分支的名称最好一致；
+
+建立本地分支和远程分支的关联，使用git branch --set-upstream branch-name origin/branch-name；
+
+从远程抓取分支，使用git pull，如果有冲突，要先处理冲突。
