@@ -1,0 +1,6 @@
+1. 取消git add .
+   git reset (返回到最新committed,默认是HEAD)
+
+2. 取消git add filename
+   不完全删除: git rm --cached filename
+   完全删除  : git rm -f filename
